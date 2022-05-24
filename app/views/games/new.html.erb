@@ -1,0 +1,23 @@
+<div class="container">
+  <h1>New game</h1>
+  <div class="grid_elements">
+    <ul>
+      <% @grid.each do |letter| %>
+        <li><%=letter.upcase%></li>
+      <% end %>
+    </ul>
+  </div>
+
+  <form action='/score'>
+    <p>What is the longest word you can find?</p>
+    <div class="user_input">
+      <input type="text" name="word" class="form-control" aria-describedby="inputGroup-sizing-default">
+      <input type="submit" class="btn btn-primary-outline" value="Play">
+    </div>
+    <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+    <%= hidden_field_tag :grid, @grid%>
+  </form>
+
+</div>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">

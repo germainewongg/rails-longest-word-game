@@ -1,0 +1,51 @@
+// Place all the styles related to the games controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Lora:ital,wght@0,600;0,700;1,400;1,500&family=Montserrat:ital,wght@0,100;0,200;0,600;0,700;0,800;0,900;1,100;1,400;1,500&family=Mukta:wght@300;400;500;600;700;800&family=Open+Sans&family=Roboto:ital,wght@0,500;0,700;0,900;1,500;1,700&family=Space+Mono&display=swap");
+
+.user_input {
+  display: flex;
+}
+
+.form-control {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.btn.btn-primary-outline {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  background-color: none;
+  border: solid 1px #d4d4d4;
+}
+
+a {
+  text-decoration: none;
+  color: blue;
+}
+
+li {
+
+  background-color: #C9B79C;
+  padding: 35px;
+  font-family: 'Lato';
+  font-weight: 700;
+  color: white;
+  margin: 10px;
+}
+
+ul {
+  margin-top: 15px;
+  padding: 0;
+  display:flex;
+  flex-wrap:wrap;
+}
+
+.grid_elements {
+  display: flex;
+  margin-top: 10px;
+}
+
+#container {
+  display: flex;
+}
